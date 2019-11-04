@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "Noto Sans";
+    src: url("https://fonts.googleapis.com/css?family=Noto+Sans&display=swap");
+  }
+
+html {
+    font-family: 'Noto Sans', sans-serif;
+    /*background-image: url('images/marfalandscape.jpg');*/
+}
+
+#container { 
+    display: grid;
+    grid-template-areas: "nav  main-image    main-image";
+    grid-template-areas: "nav  main-text-one main-text-two";
+    grid-template-areas: "nav       footer footer";
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 2%;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.4);
+}
+
+
+nav {
+    display: grid;
+    padding-left: .5em;
+    padding-right: 1em;
+    align-items: center;
+    justify-items: center;
+    border-right-style: solid;
+    border-width: medium;
+    border-color: red;
+
+}
+
+footer {
+    justify-items: center;
+}
+
+#foot {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.navbar {
+    padding: 30px;
+    border: 100px;
+    margin: .5em;
+    border-bottom-style: solid;
+    border-width: thin;
+    border-color: lightgray;
+
+}
+
+#main-text-one, #main-text-two {
+    text-align: justify;
+}
+
+#main-image{
+    text-align: center;
+    padding: 2%;
+    margin: 2%;
+}
+
+a {
+    text-decoration: none;
+    text-align: justify;
+}
+
+a:hover { 
+    opacity: .6;
+}
+a:visited {
+    text-decoration: none;
+    color: black;
+}
